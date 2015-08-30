@@ -1,7 +1,7 @@
 class PlayersController < ApplicationController
 
   def show
-    @player = Player.find(params[:id])
+    @player = Player.first
   end
 
   def create
