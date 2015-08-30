@@ -1,0 +1,37 @@
+<h1> Create a player</h1>
+
+<%= form_for :player, url: players_show_path do |f| %>
+
+<p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.label :age %><br>
+  <%= f.text_field :age %>
+</p>
+
+<p>
+  <%= f.label :weight %><br>
+  <%= f.text_field :weight %>
+</p>
+
+<p>
+  <%= f.label :size %><br>
+  <%= f.text_field :size %>
+</p>
+
+<p>
+  <%= f.label :position %><br>
+  <%= f.text_field :position %>
+</p>
+
+<p>
+  <%= f.label :country %><br>
+  <%= f.text_field :country %>
+</p>
+
+<p> <%= f.submit %> </p>
+
+<% end %>
