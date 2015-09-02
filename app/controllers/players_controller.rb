@@ -1,7 +1,7 @@
 class PlayersController < ApplicationController
 
   def show
-    @player = Player.first
+    @players = Player.all
   end
 
   def create

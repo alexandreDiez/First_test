@@ -3,5 +3,11 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+#TODO Generate by a excell or scrapping a stats site
+    Player.create( name: 'Sydney Croby', age: 26, position: "Foward", number: 87, weight: 200, height: "6'1''", picture: "crosby.png",     country: "Canada")
+    Player.create( name: 'Pernell Karl', age: 26, position: "Defencemen", number: 76, weight: 214, height: "6'0''", picture: "subban.png", country: "Canada")
+    Player.create( name: 'Carey Price',  age: 28, position: "Goalie", number: 31, weight: 216, height: "6'3''", picture: "price.png", country: "Canada")
+    Player.create( name: 'Corey Perry',  age: 26, position: "Foward", number: 10, weight: 213, height: "6'3''", picture: "perry.png", country: "Canada")
+    Player.create( name: 'Alex Galchenyuk', age: 21, position: "Foward", number: 27, weight: 198, height: "6'1''", picture: "galchenyuk.png", country: "USA")
+

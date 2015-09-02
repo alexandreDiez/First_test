@@ -1,14 +1,29 @@
-<h1> <% @player.name %> </h1>
-
-<div id="picturePlayer">
-
-</div>
 
 
-<ul>
-  <li> Weigth : <% @player.weight %> lb</li>
-  <li> Weigth : <% @player.age %> yers old</li>
-  <li> Weigth : <% @player.size %> feet</li>
-  <li> Weigth : <% @player.position %></li>
-  <li> Weigth : <% @player.country %></li>
-</ul>
+<h1>Stats</h1>
+
+
+  <table>
+    <thead>
+        <tr>
+          <td> Name </td>
+          <td> Weight </td>
+          <td> Age    </td>
+          <td> Height </td>
+          <td> Position </td>
+          <td> Country  </td>
+        </tr>
+    </thead>
+    <tbody>
+        <% @players.each do |player| %>
+        <tr>
+              <td><%= player.name %></td>
+              <td><%= player.weight %></td>
+              <td><%= player.age %></td>
+              <td><%= player.height %></td>
+              <td><%= player.position %></td>
+              <td><%= player.country %></td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
