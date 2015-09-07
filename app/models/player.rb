@@ -1,7 +1,7 @@
 class Player < ActiveRecord::Base
 
   #TODO Add player constraint and LOV for position, Country
-  attr_accessible :name, :weight , :size, :positiom, :age, :country
+  #attr_accessor :name, :weight , :size, :position, :age, :country
   validates :name, :weight , :size, :positiom, :age, :country, presence:true
 
   validates :name, uniqueness: true

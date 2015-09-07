@@ -1,29 +1,22 @@
 
 
-<h1>Stats</h1>
+<div class='col-md-12'>
+  <h1>NHL Stats</h1>
+</div>
 
+<div class="card  well well-lg row">
+  <div class="col-lg-3">
+    <h2><%= @player.name %></h2>
+    <%= @player.picture %>
+  </div>
+  <div class="col-lg-8">
+    <ul class="table table-bordered">
+      <li><%= @player.position %> </li>
+      <li><%= @player.age %></li>
+      <li><%= @player.height %></li>
+      <li><%= @player.weight %></li>
+      <li><%= @player.country %></li>
 
-  <table>
-    <thead>
-        <tr>
-          <td> Name </td>
-          <td> Weight </td>
-          <td> Age    </td>
-          <td> Height </td>
-          <td> Position </td>
-          <td> Country  </td>
-        </tr>
-    </thead>
-    <tbody>
-        <% @players.each do |player| %>
-        <tr>
-              <td><%= player.name %></td>
-              <td><%= player.weight %></td>
-              <td><%= player.age %></td>
-              <td><%= player.height %></td>
-              <td><%= player.position %></td>
-              <td><%= player.country %></td>
-        </tr>
-        <% end %>
-    </tbody>
-  </table>
+    </ul>
+  </div>
+</div>

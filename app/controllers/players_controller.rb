@@ -1,6 +1,10 @@
 class PlayersController < ApplicationController
 
   def show
+    @player = Player.find(params[:player])
+  end
+
+  def standing
     @players = Player.all
   end
 

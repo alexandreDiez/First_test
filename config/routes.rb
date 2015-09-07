@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
 
   get 'players/show'
+  get 'players/standing'
   get 'players/new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'players#show'
+  root 'players#standing'
 
   # Example of regular route:
 
